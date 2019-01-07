@@ -1,0 +1,60 @@
+print("MUHAMMAD SAAD HASAN \n18B-117-CS \nSECTION:-A \nLAB 05 \nPROGRAMMING EXECRISES \nQUESTION 5")
+# Multiple functions for making the mark sheet program
+def mark_sheet():
+    name = input("Please enter your name:")
+    f_name = input("Please enter your father name:")
+    roll_no = input("Please enter your Roll Number:")
+    calculus = eval(input("Please enter your marks of Calculus:"))
+    eng = eval(input("Please enter your marks of English:"))
+    pf = eval(input("Please enter your marks of Programming Fundamentals:"))
+    ict = eval(input("Please enter your marks of ICT:"))
+    isl = eval(input("Please enter your marks of Islamiat:"))
+    be = eval(input("Please enter your marks of Basic electronics:"))
+    total_marks = calculus+eng+pf+ict+isl+be
+    percentage = ((total_marks)*100)/600
+    print("_____________________________________________________________")
+    print("|   \t\t\t  MARK  SHEET  \t\t\t   |")
+    print("|-----------------------------------------------------------|")
+    print("| Name                             | "+str(name)+"    |")
+    print("|-----------------------------------------------------------|")
+    print("| Father Name                      | "+str(f_name)+" |")
+    print("|-----------------------------------------------------------|")
+    print("| Roll.No                          | "+str(roll_no)+"             |")
+    print("|-----------------------------------------------------------|")
+    print("| Marks of Calculus                | "+str(calculus)+"                     |")
+    print("|-----------------------------------------------------------|")
+    print("| Marks of English                 | "+str(eng)+"                     |")
+    print("|-----------------------------------------------------------|")
+    print("| Mraks of Progamming Fundamentals | "+str(pf)+"                     |")
+    print("|-----------------------------------------------------------|")
+    print("| Marks of ICT                     | "+str(ict)+"                     |")
+    print("|-----------------------------------------------------------|")
+    print("| Marks of Islamiat                | "+str(isl)+"                     |")
+    print("|-----------------------------------------------------------|")
+    print("| Marks of Basic Electronic        | "+str(be)+"                     |")
+    print("|-----------------------------------------------------------|")
+    print("| The total obtanied marks are     | "+str(total_marks)+ "                    |")
+    print("|-----------------------------------------------------------|")
+    print("| The percentage is                | "+str(round(percentage))+ "%                    |")
+    print("|-----------------------------------------------------------|")
+    if percentage > 90:
+        print("| Grade                            | A+                     |")
+        print("|___________________________________________________________|")
+    elif 90 > percentage > 80: 
+        print("| Grade                            | A                      |")
+        print("|___________________________________________________________|")
+    elif 80 > percentage > 70:
+        print("| Grade                            | B                      |")
+        print("|___________________________________________________________|")
+    elif 70 > percentage > 60:
+        print("| Grade                            | C                      |")
+        print("|___________________________________________________________|")
+    elif 60 > percentage > 50:
+        print("| Grdae                            | D                      |")
+        print("|___________________________________________________________|")
+    elif 50 > percentage > 40:
+        print("| Grade                            | E                      |")
+        print("|___________________________________________________________|")
+    else :
+        print("| Grade                            | F                      |")
+        print("|___________________________________________________________|")
